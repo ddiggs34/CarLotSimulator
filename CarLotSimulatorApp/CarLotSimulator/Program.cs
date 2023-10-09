@@ -35,15 +35,15 @@ namespace CarLotSimulator
             carTwo.Year = 2000;
             carTwo.Make = "Lamborgini";
             carTwo.Model = "Urus";
-            carTwo.MakeEngineNoise();
-            carTwo.MakeHonkNoise();
+            carTwo.EngineNoise = "vroom";
+            carTwo.HonkNoise = "beep";
             carTwo.IsDriveable = true;  
 
             var carThree = new Car();
             carThree.Year = 2012;
             carThree.Make = "Nissan";
-            carThree.MakeEngineNoise();
-            carThree.MakeHonkNoise();
+            carThree.EngineNoise = "vroom";
+            carThree.HonkNoise = "beep";
             carThree.IsDriveable = true;
 
 
