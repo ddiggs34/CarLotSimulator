@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CarLotSimulator
 {
@@ -8,7 +10,7 @@ namespace CarLotSimulator
         {
             //TODO
 
-            //Create a seperate class file called Car
+            //Create a separate class file called Car
             //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
             //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
             //The methods should take one string parameter: the respective noise property
@@ -17,6 +19,37 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+
+            var uno = new Car();
+
+            
+                uno.Year = 2021;
+                uno.Make = "Ford";
+                uno.Model = "Mustang";
+                uno.EngineNoise = "vroom";
+                uno.HonkNoise = "beeeeeep";
+                uno.IsDriveable = true;
+            
+
+            var carTwo = new Car();
+            carTwo.Year = 2000;
+            carTwo.Make = "Lamborgini";
+            carTwo.Model = "Urus";
+            carTwo.MakeEngineNoise();
+            carTwo.MakeHonkNoise();
+            carTwo.IsDriveable = true;  
+
+            var carThree = new Car();
+            carThree.Year = 2012;
+            carThree.Make = "Nissan";
+            carThree.MakeEngineNoise();
+            carThree.MakeHonkNoise();
+            carThree.IsDriveable = true;
+
+
+
+
+
 
             //*************BONUS*************//
 
