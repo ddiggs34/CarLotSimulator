@@ -8,6 +8,11 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
+            var carLot = new CarLot();
+
+            Console.WriteLine($"{CarLot._numberOfCars}");
+            
+            
             //TODO
 
             //Create a separate class file called Car
@@ -20,16 +25,20 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
-            var uno = new Car();
+            var carUno = new Car();
 
             
-                uno.Year = 2021;
-                uno.Make = "Ford";
-                uno.Model = "Mustang";
-                uno.EngineNoise = "vroom";
-                uno.HonkNoise = "beeeeeep";
-                uno.IsDriveable = true;
-            
+                carUno.Year = 2021;
+                carUno.Make = "Ford";
+                carUno.Model = "Mustang";
+                carUno.EngineNoise = "vroom";
+                carUno.HonkNoise = "beeeeeep";
+                carUno.IsDriveable = true;
+            //adding to parking lot list
+            carLot.ParkingLot.Add(carUno);
+            Console.WriteLine($"{CarLot._numberOfCars}");
+
+
 
             var carTwo = new Car();
             carTwo.Year = 2000;
@@ -37,7 +46,11 @@ namespace CarLotSimulator
             carTwo.Model = "Urus";
             carTwo.EngineNoise = "vroom";
             carTwo.HonkNoise = "beep";
-            carTwo.IsDriveable = true;  
+            carTwo.IsDriveable = true;
+
+            carLot.ParkingLot.Add(carTwo);
+            Console.WriteLine($"{CarLot._numberOfCars}");
+
 
             var carThree = new Car();
             carThree.Year = 2012;
@@ -45,6 +58,10 @@ namespace CarLotSimulator
             carThree.EngineNoise = "vroom";
             carThree.HonkNoise = "beep";
             carThree.IsDriveable = true;
+
+            carLot.ParkingLot.Add(carThree);
+            Console.WriteLine($"{CarLot._numberOfCars}");
+
 
 
 

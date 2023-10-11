@@ -39,17 +39,20 @@ namespace CarLotSimulator
             Year = year;
             Make = make;
             Model = model;
+            EngineNoise = engineNoise;
+            HonkNoise = honkNoise;
 
             if (isDriveable) 
             {
                 Console.WriteLine("Yes");
             }
-            
+            CarLot._numberOfCars++;
 
         }
 
         public Car()
         {
+            CarLot._numberOfCars++;
         }
     }
 
