@@ -10,9 +10,13 @@ namespace CarLotSimulator
         {
             var carLot = new CarLot();
 
-            Console.WriteLine($"{CarLot._numberOfCars}");
+            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
+            Console.WriteLine($"The current total number of cars (before anything is added) is {CarLot.numberOfCars}");
             
-            
+                
+                
+
+
             //TODO
 
             //Create a separate class file called Car
@@ -36,7 +40,7 @@ namespace CarLotSimulator
                 carUno.IsDriveable = true;
             //adding to parking lot list
             carLot.ParkingLot.Add(carUno);
-            Console.WriteLine($"{CarLot._numberOfCars}");
+            Console.WriteLine($"The total number of cars with {carUno.Make} {carUno.Model} added is {CarLot.numberOfCars}");
 
 
 
@@ -49,18 +53,20 @@ namespace CarLotSimulator
             carTwo.IsDriveable = true;
 
             carLot.ParkingLot.Add(carTwo);
-            Console.WriteLine($"{CarLot._numberOfCars}");
+            Console.WriteLine($"The total number of cars with a {carTwo.Make} {carTwo.Model} added is {CarLot.numberOfCars}");
 
 
             var carThree = new Car();
             carThree.Year = 2012;
             carThree.Make = "Nissan";
+            carThree.Model = "GT-R";
             carThree.EngineNoise = "vroom";
             carThree.HonkNoise = "beep";
             carThree.IsDriveable = true;
 
             carLot.ParkingLot.Add(carThree);
-            Console.WriteLine($"{CarLot._numberOfCars}");
+            Console.WriteLine($"The total number of cars with a {carThree.Make} {carThree.Model} added is {CarLot.numberOfCars}");
+
 
 
 

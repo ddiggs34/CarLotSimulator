@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,6 +32,8 @@ namespace CarLotSimulator
             Console.WriteLine("BEEEEP");
         }
 
+        
+
        
 
         
@@ -46,13 +49,13 @@ namespace CarLotSimulator
             {
                 Console.WriteLine("Yes");
             }
-            CarLot._numberOfCars++;
+            
 
         }
 
         public Car()
         {
-            CarLot._numberOfCars++;
+            CarLot.numberOfCars++; //ClassName.STATIC MEMBER
         }
     }
 
